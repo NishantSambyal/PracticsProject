@@ -1,10 +1,11 @@
-import {Text, View} from 'react-native';
+import {FlatList, Text, View} from 'react-native';
 import React, {Component} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Login from './Login';
 import Signup from './Signup';
 import Dashboard from './Dashboard';
+import List from './List';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,7 +16,8 @@ export default class App extends Component {
         <Stack.Navigator>
           <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Signup" component={Signup} />
-          <Stack.Screen name="Dashboard" component={Dashboard}/>
+          <Stack.Screen name="Dashboard" component={Dashboard} />
+          <Stack.Screen name="List" component={List} />
         </Stack.Navigator>
       </NavigationContainer>
     );
