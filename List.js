@@ -77,11 +77,6 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     marginTop: 10,
   },
-  // name:{
-  //   marginBottom: 10,
-  //   width: '70%',
-
-  // },
 });
 
 export default List;
